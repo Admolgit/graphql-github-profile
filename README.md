@@ -1,6 +1,4 @@
-# GRAPHQL implementation
 
-### 1. Convert your rest API from week 9 task 2 into GraphQL
 
 ### 2. GitHub GraphQL Challenge
 
