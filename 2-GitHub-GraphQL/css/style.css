@@ -143,6 +143,8 @@ body {
   padding-top: 2rem;
 }
 
+/* Mobile view */
+
 @media screen and (max-width: 600px) {
 
   body {

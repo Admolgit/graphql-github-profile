@@ -80,7 +80,7 @@ fetch(base_url, {
   </div>
 `;
   
-// Navbar Avatar Logo
+// Navbar Avatar Logo Graphql
   const avatar_url = document.querySelector("#profile");
 
   avatar_url.innerHTML = output;
