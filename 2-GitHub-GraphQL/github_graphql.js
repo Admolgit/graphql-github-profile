@@ -64,12 +64,12 @@ fetch(base_url, {
   const output = `
   <div class="card card-body mb-3">
     <div class="row">
-      <div class="col-md-18">
+      <div class="col-md-18 rowest">
         <img class="img" style="border-radius: 50%" src="${data.data.viewer.avatarUrl}">
         <p class="url"></p>
         <p id="name-url-1">${data.data.viewer.name}</p>
         <p id="name-url-2">${data.data.viewer.login}</p>
-        <a href="${data.data.viewer.url}" target="_blank" class="btn btn-primary btn-block" mb-4>Edit profile</a>
+        <a href="${data.data.viewer.url}" target="_blank" class="btn btn-primary btn-block" mb-4>Check profile</a>
         <p class="location" style="padding-top: 0.5rem"><i class="fa fa-map-marker">${data.data.viewer.location}</i></p>
         <p class="location"><i class="fa fa-link"><a href="https://admolfolio.netlify.app/">${data.data.viewer.websiteUrl}</a></i></p>
         <p class="location"><i class="fa fa-twitter"><a href="https://twitter.com/AdmolZa890">${data.data.viewer.twitterUsername}</a></i></p>
@@ -111,13 +111,11 @@ fetch(base_Url, {
   console.log(data);
 
   let profile = document.querySelector('#repository')
-
-  // <p class="repository">${data.data.viewer.repositories.edges.map((user) => user.repository.name)}</p>
-//fas fa-circle
+  
   profile.innerHTML = `
-  <div class="rep-details" style="padding-left: 3rem">
+  <div class="rep-details rep-style" style="padding-left: 3rem">
     <div class="rows">
-      <div>
+      <div class="reps">
         <span class="badge"><i class="fas fa-book-open"></i>Overview</span>
         <span class="badge"><i class="fas fa-archive"></i><a href="https://github.com/Admolgit?tab=repositories" style="color: black; text-decoration: none;">Repository 
           ${data.data.viewer.repositories.edges.length}</a>

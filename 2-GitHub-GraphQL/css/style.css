@@ -37,6 +37,7 @@ body {
   align-items: center;
 }
 
+.logo-li,
 .container .github-1 .github-nav .github-li {
   list-style: none;
   margin-left: 0.5rem;
@@ -71,6 +72,7 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 10px;
+  grid-row-gap: 10px;
   width: 100%;
   height: 50%;
 }
@@ -82,15 +84,17 @@ body {
   border-radius: 5px;
 }
 
-.cards:nth-child(3) {
-  /* margin-top: -9rem; */
-}
-
 .rows {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+
+
+.row {
+  padding-left: 1rem;
 }
 
 .rep-details {
@@ -137,4 +141,150 @@ body {
 .language {
   padding-left: 1.5rem;
   padding-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .menu-container {    
+    width: 50px; 
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .menu-icon {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+  .fa-bell-o {
+    width: 50px; 
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+
+  .navbar-brand img {
+    width: 50px; 
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 200px;
+  }
+
+  .container {
+    display: block;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: visible;
+    outline: none;
+  }
+
+  .container .github-li {
+    display: none;
+  }
+
+  .menu-icon:hover > .github-li {
+    display: block;
+    height: 50%;
+  }
+
+  .cards {
+    width: 70%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .container .github-1 {
+    font-weight: 400;
+  }
+  
+  .search-1 {
+    margin-left: -3rem;
+    font-size: 14px !important;
+  }
+
+  .git-1 {
+    font-size: 10px !important;
+  }
+
+  .navbar-brand {
+    margin-left: -5rem;
+  }
+
+  .github-1 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .github-2 {
+    padding-left: 1rem;
+  }
+
+  #name-url-1 {
+    font-size: 20px;
+  }
+
+  .row {
+    padding-left: 1rem;
+  }
+  
+  .grid {
+    display: block;
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    width: 150%;
+    height: 70%;
+  }
+  
+  .repo-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rep-details {
+    height: 100%;
+  }
+
+  #repository {
+    height: 100%;
+    width: 100%;
+    margin-left: -2rem;
+  }
+
+  .badge {
+    font-size: 12px;
+  }
+
+  .reps {
+    display: flex;
+    margin-left: -1rem !important;
+    padding-left: 2px !important;
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    font-size: 12px !important;
+  }
+
+  .name-url-1,
+  .name-url-2,
+  .location {
+    font-size: 14px !important;
+  }
 }
